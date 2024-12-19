@@ -7,6 +7,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/nuoc-hoa-nam' element={<Home />} />
       </Routes>
     </BrowserRouter>
   )
