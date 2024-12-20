@@ -21,10 +21,10 @@ const Header = () => {
     const { setNavbar } = useContext(AppContext)
 
     return (
-        <div className='flex flex-col mt-3.5 '>
+        <div className='flex flex-col mt-1.5 sm:mt-3.5 '>
             <div className='flex justify-between text-sm'>
-                <p>Thương hiệu nước hoa uy tín từ 2013</p>
-                <div className='flex items-center gap-2 relative'>
+                <p className='hidden sm:block'>Thương hiệu nước hoa uy tín từ 2013</p>
+                <div className='items-center gap-2 relative hidden sm:flex '>
                     <p>Thông báo mới</p>
                     <FiBell className='text-xl text-gray-700' />
                     <div className='absolute -right-2 -top-2 px-[7px] rounded-full bg-red-500 text-[10px] text-white'>
@@ -32,7 +32,15 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-between mt-3.5'>
+
+            <div className='flex justify-between mt-0 sm:mt-3.5'>
+                <div className='items-center gap-2 relative flex sm:hidden'>
+                    <FiBell className='text-xl text-gray-700' />
+                    <div className='absolute left-2.5 top-1 size-4 text-center rounded-full bg-red-500 text-[10px] text-white'>
+                        5
+                    </div>
+                    <IoIosSearch className='text-2xl text-gray-600 mx-2' />
+                </div>
                 <Link
                     to='/'
                     className='text-red-500 text-3xl font-medium cursor-pointer'
@@ -40,22 +48,22 @@ const Header = () => {
                 >
                     namperfume
                 </Link>
-                <div className='flex items-center border border-gray-300 rounded-md w-72 h-9 hover:border-gray-500'>
+                <div className='hidden sm:flex items-center border border-gray-300 rounded-md w-72 h-9 hover:border-gray-500'>
                     <IoIosSearch className='text-2xl text-gray-600 mx-2' />
                     <input type="text" className='w-full focus:outline-none pr-2.5' />
                     <TiDeleteOutline className='mr-2 text-gray-500 text-xl' />
                 </div>
 
-                <div className='flex items-center gap-1.5 text-gray-700'>
+                <div className='hidden sm:flex items-center gap-1.5 text-gray-700  cursor-pointer'>
                     <AiTwotoneShop />
-                    <p className='hover:text-red-500 cursor-pointer'>8 cửa hàng toàn quốc</p>
+                    <p className='hidden lg:block hover:text-red-500'>8 cửa hàng toàn quốc</p>
                 </div>
 
-                <div className='flex items-center gap-1.5 text-gray-700 relative group'>
+                <div className='hidden sm:flex items-center gap-1.5 text-gray-700 cursor-pointer relative group'>
                     <RiArticleLine />
-                    <p className='group-hover:text-red-500 cursor-pointer'>Nmagazine</p>
+                    <p className='group-hover:text-red-500 hidden lg:block'>Nmagazine</p>
 
-                    <div className='absolute pt-8 top-2.5 -left-3.5 hidden group-hover:flex'>
+                    <div className='absolute z-50 pt-8 top-2.5 -left-3.5 hidden group-hover:flex'>
                         <div className='border border-gray-300 bg-white w-max px-3.5 py-3.5 flex flex-col gap-3.5'>
                             <div className='flex items-center gap-3 border-b pb-2 cursor-pointer group/item'>
                                 <img src={cong_dong_nuoc_hoa} className='w-11' alt="" />
@@ -90,11 +98,11 @@ const Header = () => {
                     </div>
                 </div>
 
-                <div className='flex items-center gap-1.5 text-gray-700 relative group'>
+                <div className='hidden sm:flex items-center gap-1.5 text-gray-700 cursor-pointer relative group '>
                     <FaRegUser />
-                    <p className='hover:text-red-500'>Đăng nhập</p>
+                    <p className='group-hover:text-red-500 hidden lg:block'>Đăng nhập</p>
 
-                    <div className='absolute pt-8 top-2.5 -right-3.5 hidden group-hover:flex'>
+                    <div className='absolute z-50 pt-8 top-2.5 -right-3.5 hidden group-hover:flex'>
                         <div className='border border-gray-300 bg-white w-max px-3.5 py-3.5 flex flex-col gap-3.5'>
                             <div className='flex items-center gap-5'>
                                 <FaRegUser className='text-2xl' />
