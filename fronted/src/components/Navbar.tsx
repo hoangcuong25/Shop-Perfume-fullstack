@@ -19,7 +19,7 @@ const Navbar = () => {
                 </Link>
                 <Link
                     to="/nuoc-hoa-nam"
-                    className='text-sm'
+                    className='text-sm hover:text-rose-600'
                     onClick={() => setNavbar('nuoc-hoa-nam')}
                 >
                     Nước Hoa Nam
@@ -27,7 +27,7 @@ const Navbar = () => {
                 </Link>
                 <Link
                     to="/nuoc-hoa-nu"
-                    className='text-sm'
+                    className='text-sm hover:text-rose-600'
                     onClick={() => setNavbar('nuoc-hoa-nu')}
                 >
                     Nước Hoa Nữ
@@ -35,7 +35,7 @@ const Navbar = () => {
                 </Link>
                 <Link
                     to="/nuoc-hoa-mini"
-                    className='text-sm'
+                    className='text-sm hover:text-rose-600'
                     onClick={() => setNavbar('nuoc-hoa-mini')}
                 >
                     Nước Hoa Mini
@@ -43,7 +43,7 @@ const Navbar = () => {
                 </Link>
                 <Link
                     to="/giftset"
-                    className='text-sm'
+                    className='text-sm hover:text-rose-600'
                     onClick={() => setNavbar('giftset')}
                 >
                     Giftset
@@ -51,7 +51,7 @@ const Navbar = () => {
                 </Link>
                 <Link
                     to="/thuong-hieu"
-                    className='text-sm'
+                    className='text-sm hover:text-rose-600'
                     onClick={() => setNavbar('thuong-hieu')}
                 >
                     Thương Hiệu
@@ -59,7 +59,7 @@ const Navbar = () => {
                 </Link>
                 <Link
                     to="/bodycare&homecare"
-                    className='text-sm'
+                    className='text-sm hover:text-rose-600'
                     onClick={() => setNavbar('bodycare&homecare')}
                 >
                     Bodycare & Homecare

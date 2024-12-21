@@ -1,9 +1,12 @@
 import React from 'react'
+import { IoShieldCheckmarkOutline } from "react-icons/io5";
 
-const support = () => {
+const Support = () => {
     return (
-        <div>support</div>
+        <div className='absolute'>
+            <IoShieldCheckmarkOutline className='text-3xl'/>
+        </div>
     )
 }
 
-export default support
+export default Support

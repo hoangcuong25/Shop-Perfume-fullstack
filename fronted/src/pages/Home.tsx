@@ -2,6 +2,8 @@ import React from 'react'
 import Header from '../components/Header'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
+import About from '../components/About'
+import { BiMessageDetail } from "react-icons/bi";
 
 const Home = () => {
     return (
@@ -15,6 +17,11 @@ const Home = () => {
             </div>
             <div>
                 <Hero />
+            </div>
+            <About />
+
+            <div className='fixed bottom-3 left-3 bg-gray-100 rounded-full p-1 text-3xl text-red-500'>
+                <BiMessageDetail />
             </div>
         </div>
     )
